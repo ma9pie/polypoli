@@ -1,6 +1,5 @@
 import CookieUtils from "./CookieUtils";
 import Cookies from "js-cookie";
-import Rest from "@/api/Rest";
 
 const LoginUtils = () => {};
 
@@ -36,21 +35,6 @@ LoginUtils.setLogin = (accessToken) => {
 /**
  * 저장된 모든 쿠키 삭제
  */
-LoginUtils.logout = (callback) => {
-  // Rest.post(`/member/logout`, {
-  //   data: null,
-  // }).then((res) => {
-  //   Object.keys(Cookies.get()).forEach(function (cookieName) {
-  //     for (let key in modules.POPUP_COOKIE_NAMES) {
-  //       const value = modules.POPUP_COOKIE_NAMES[key];
-  //       if (cookieName === value.cookieName) {
-  //         return;
-  //       }
-  //     }
-  //     CookieUtils.deleteCookie(cookieName);
-  //   });
-  //   if (callback) callback();
-  // });
-};
+LoginUtils.logout = (callback) => {};
 
 export default LoginUtils;
