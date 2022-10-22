@@ -1,0 +1,48 @@
+{
+  "name": "polypoli-www",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "lint": "next lint",
+    "dev:pm2": "pm2 start pm2.json --only polypoli-dev --env development",
+    "start:pm2": "pm2 start pm2.json --only polypoli-prod --env production"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@next/bundle-analyzer": "^12.2.1",
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "fs": "^0.0.1-security",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.29.3",
+    "next": "12.1.6",
+    "next-redux-wrapper": "^7.0.5",
+    "nprogress": "^0.2.0",
+    "react": "18.1.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "18.1.0",
+    "react-loading": "^2.0.3",
+    "react-modal": "^3.15.1",
+    "react-redux": "^8.0.2",
+    "react-virtualized-auto-sizer": "^1.0.7",
+    "react-window": "^1.8.7",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.51.0",
+    "sharp": "^0.30.4"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "redux-logger": "^3.0.6"
+  }
+}

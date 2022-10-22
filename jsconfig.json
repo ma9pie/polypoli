@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/pages/*": ["pages/*"],
+      "@/api/*": ["pages/api/*"],
+      "@/svg/*": ["components/svg/*"],
+      "@/common/*": ["components/common/*"],
+      "@/public/*": ["public/*"],
+      "@/styles/*": ["styles/*"],
+      "@/utils/*": ["utils/*"],
+      "@/images/*": ["public/images/*"],
+      "@/redux/*": ["redux/*"]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "name": "polypoli-dev",
+      "version": "1.0.0",
+      "script": "node_modules/next/dist/bin/next",
+      "args": "dev",
+      "instances": "2",
+      "exec_mode": "cluster",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "polypoli-prod",
+      "version": "1.0.0",
+      "script": "node_modules/next/dist/bin/next",
+      "args": "start",
+      "instances": "4",
+      "exec_mode": "cluster",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
