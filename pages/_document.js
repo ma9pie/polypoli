@@ -12,8 +12,8 @@ function Document() {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="polypoli" />
         <meta name="application-name" content="polypoli" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-TileImage"
           content="icons/mstile-144x144.png"
