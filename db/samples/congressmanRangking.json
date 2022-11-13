@@ -1,0 +1,62 @@
+[
+	{
+		"ranking_id" : 1,
+		"congressman_id" : 2442,
+		"name" : "윤재옥",
+		"party" : "국민의힘",
+		"profile_image" : "http://www.assembly.go.kr/photo/9770812.jpg",
+		"likes" : 0,
+		"dislikes" : 2,
+		"year" : 2022,
+		"month" : 6,
+		"week" : 4
+	},
+	{
+		"ranking_id" : 2,
+		"congressman_id" : 2442,
+		"name" : "윤재옥",
+		"party" : "국민의힘",
+		"profile_image" : "http://www.assembly.go.kr/photo/9770812.jpg",
+		"likes" : 2,
+		"dislikes" : 0,
+		"year" : 2022,
+		"month" : 7,
+		"week" : 1
+	},
+	{
+		"ranking_id" : 3,
+		"congressman_id" : 3070,
+		"name" : "김주영",
+		"party" : "더불어민주당",
+		"profile_image" : "http://www.assembly.go.kr/photo/9771192.jpg",
+		"likes" : 0,
+		"dislikes" : 1,
+		"year" : 2022,
+		"month" : 7,
+		"week" : 1
+	},
+	{
+		"ranking_id" : 4,
+		"congressman_id" : 489,
+		"name" : "박용진",
+		"party" : "더불어민주당",
+		"profile_image" : "http://www.assembly.go.kr/photo/9770929.jpg",
+		"likes" : 4,
+		"dislikes" : 0,
+		"year" : 2022,
+		"month" : 7,
+		"week" : 4
+	},
+	{
+		"ranking_id" : 5,
+		"congressman_id" : 3057,
+		"name" : "고민정",
+		"party" : "더불어민주당",
+		"profile_image" : "http://www.assembly.go.kr/photo/9771109.jpg",
+		"likes" : 0,
+		"dislikes" : 1,
+		"year" : 2022,
+		"month" : 9,
+		"week" : 5
+	}
+]

@@ -1,5 +1,5 @@
 import dbConnect from "@/db/dbConnect";
-import User from "@/db/schemas/User";
+import Region from "@/db/schemas/Region";
 
 export default async function handler(req, res) {
   const { query, method } = req;
@@ -9,8 +9,8 @@ export default async function handler(req, res) {
   switch (method) {
     case "GET":
       try {
-        const user = await User.find({});
-        res.status(200).json(user);
+        const region = await Region.find({});
+        res.status(200).json(region);
       } catch (error) {
         res.status(400).json({ success: false });
       }

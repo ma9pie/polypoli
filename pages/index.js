@@ -128,22 +128,23 @@ function pageFrame() {
         >
           <Feed scrollTop={scrollTop}></Feed>
         </Page>
-        {isLogin() && (
-          <>
-            <Page width={`${offsetWidth}px`} left={`${offsetWidth * 1}px`}>
-              <Ranking></Ranking>
-            </Page>
-            <Page width={`${offsetWidth}px`} left={`${offsetWidth * 2}px`}>
-              <HotBills></HotBills>
-            </Page>
-            <Page width={`${offsetWidth}px`} left={`${offsetWidth * 3}px`}>
-              <ProfileList></ProfileList>
-            </Page>
-            <Page width={`${offsetWidth}px`} left={`${offsetWidth * 4}px`}>
-              <MyPage></MyPage>
-            </Page>
-          </>
-        )}
+        {isLogin() ||
+          (true && (
+            <>
+              <Page width={`${offsetWidth}px`} left={`${offsetWidth * 1}px`}>
+                <Ranking></Ranking>
+              </Page>
+              <Page width={`${offsetWidth}px`} left={`${offsetWidth * 2}px`}>
+                <HotBills></HotBills>
+              </Page>
+              <Page width={`${offsetWidth}px`} left={`${offsetWidth * 3}px`}>
+                <ProfileList></ProfileList>
+              </Page>
+              <Page width={`${offsetWidth}px`} left={`${offsetWidth * 4}px`}>
+                <MyPage></MyPage>
+              </Page>
+            </>
+          ))}
       </Container>
     </View>
   );

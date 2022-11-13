@@ -38,7 +38,7 @@ function TabBar(props) {
 
   return (
     <Wrapper>
-      {userState.userKey === -1 ? (
+      {/* {userState.userKey === -1 ? (
         <LoginBtnWrapper>
           <LoginBtn onClick={() => router.push(kakaoAuthUrl)}>
             <Image
@@ -47,55 +47,55 @@ function TabBar(props) {
             ></Image>
           </LoginBtn>
         </LoginBtnWrapper>
-      ) : (
-        <TabContainer>
-          <Icon onClick={() => chageTabNum(0)}>
-            {tabNum === 0 ? (
-              <HomeFillSvg fill="var(--iconFill)"></HomeFillSvg>
-            ) : userState.theme === "Dark" ? (
-              <HomeSvg fill="var(--bg80)"></HomeSvg>
-            ) : (
-              <HomeSvg></HomeSvg>
-            )}
-          </Icon>
-          <Icon onClick={() => chageTabNum(1)}>
-            {tabNum === 1 ? (
-              <TrophyFillSvg fill="var(--iconFill)"></TrophyFillSvg>
-            ) : userState.theme === "Dark" ? (
-              <TrophySvg fill="var(--bg80)"></TrophySvg>
-            ) : (
-              <TrophySvg></TrophySvg>
-            )}
-          </Icon>
-          <Icon onClick={() => chageTabNum(2)}>
-            {tabNum === 2 ? (
-              <FireFillSvg fill="var(--iconFill)"></FireFillSvg>
-            ) : userState.theme === "Dark" ? (
-              <FireSvg fill="var(--bg80)"></FireSvg>
-            ) : (
-              <FireSvg></FireSvg>
-            )}
-          </Icon>
-          <Icon onClick={() => chageTabNum(3)}>
-            {tabNum === 3 ? (
-              <PersonBadgeFillSvg fill="var(--iconFill)"></PersonBadgeFillSvg>
-            ) : userState.theme === "Dark" ? (
-              <PersonBadgeSvg fill="var(--bg80)"></PersonBadgeSvg>
-            ) : (
-              <PersonBadgeSvg></PersonBadgeSvg>
-            )}
-          </Icon>
-          <Icon onClick={() => chageTabNum(4)}>
-            {tabNum === 4 ? (
-              <ListFillSvg fill="var(--iconFill)"></ListFillSvg>
-            ) : userState.theme === "Dark" ? (
-              <ListSvg fill="var(--bg80)"></ListSvg>
-            ) : (
-              <ListSvg></ListSvg>
-            )}
-          </Icon>
-        </TabContainer>
-      )}
+      ) : ( */}
+      <TabContainer>
+        <Icon onClick={() => chageTabNum(0)}>
+          {tabNum === 0 ? (
+            <HomeFillSvg fill="var(--iconFill)"></HomeFillSvg>
+          ) : userState.theme === "Dark" ? (
+            <HomeSvg fill="var(--bg80)"></HomeSvg>
+          ) : (
+            <HomeSvg></HomeSvg>
+          )}
+        </Icon>
+        <Icon onClick={() => chageTabNum(1)}>
+          {tabNum === 1 ? (
+            <TrophyFillSvg fill="var(--iconFill)"></TrophyFillSvg>
+          ) : userState.theme === "Dark" ? (
+            <TrophySvg fill="var(--bg80)"></TrophySvg>
+          ) : (
+            <TrophySvg></TrophySvg>
+          )}
+        </Icon>
+        <Icon onClick={() => chageTabNum(2)}>
+          {tabNum === 2 ? (
+            <FireFillSvg fill="var(--iconFill)"></FireFillSvg>
+          ) : userState.theme === "Dark" ? (
+            <FireSvg fill="var(--bg80)"></FireSvg>
+          ) : (
+            <FireSvg></FireSvg>
+          )}
+        </Icon>
+        <Icon onClick={() => chageTabNum(3)}>
+          {tabNum === 3 ? (
+            <PersonBadgeFillSvg fill="var(--iconFill)"></PersonBadgeFillSvg>
+          ) : userState.theme === "Dark" ? (
+            <PersonBadgeSvg fill="var(--bg80)"></PersonBadgeSvg>
+          ) : (
+            <PersonBadgeSvg></PersonBadgeSvg>
+          )}
+        </Icon>
+        <Icon onClick={() => chageTabNum(4)}>
+          {tabNum === 4 ? (
+            <ListFillSvg fill="var(--iconFill)"></ListFillSvg>
+          ) : userState.theme === "Dark" ? (
+            <ListSvg fill="var(--bg80)"></ListSvg>
+          ) : (
+            <ListSvg></ListSvg>
+          )}
+        </Icon>
+      </TabContainer>
+      {/* )} */}
     </Wrapper>
   );
 }

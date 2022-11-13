@@ -1,12 +1,13 @@
-import Button from "@/common/Button";
-import Styles from "@/common/Styles";
 import styled from "@emotion/styled";
+import Axios from "axios";
 import debounce from "lodash/debounce";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "@/redux/modules/user";
+import Button from "@/common/Button";
+import Styles from "@/common/Styles";
 import SettingLayout from "@/layouts/SettingLayout";
 import ModalUtils from "@/utils/ModalUtils";
 import CongressmanAPI from "@/api/CongressmanAPI";
@@ -51,12 +52,13 @@ function Region() {
     congressmanId: "",
     name: "",
     party: "",
-    img: "",
+    profileImage: "",
   });
 
   // 주소 데이터 호출
   useEffect(() => {
-    RegionListAPI.getRegionList().then((res) => {
+    // RegionListAPI.getRegionList().then((res) => {
+    Axios.get("/api/v2/region").then((res) => {
       let regionList = [];
       for (let i = 0; i < res.data.length; i++) {
         const city = res.data[i].city;
@@ -82,7 +84,11 @@ function Region() {
     const electoralDistrict = data[1].trim();
     const region = city + " " + electoralDistrict;
 
-    CongressmanAPI.getCongressmanByRegion(region).then((res) => {
+    Axios.get("/api/v2/congressman", {
+      params: {
+        region: region,
+      },
+    }).then((res) => {
       setCongressmanData({
         area: area,
         region: region,
@@ -91,7 +97,7 @@ function Region() {
         congressmanId: res.data.congressmanId,
         name: res.data.name,
         party: res.data.party,
-        img: res.data.profileImage,
+        profileImage: res.data.profileImage,
       });
       setProgress(2);
     });
@@ -105,8 +111,8 @@ function Region() {
       userRegion: congressmanData.region,
       regionCongressmanId: congressmanData.congressmanId,
     };
-    UserAPI.updateUserRegion(userRegionData);
-    dispatch(userActions.setRegion(userRegionData));
+    // UserAPI.updateUserRegion(userRegionData);
+    // dispatch(userActions.setRegion(userRegionData));
     ModalUtils.openAlert({
       message: `내 지역 변경이 완료되었습니다.`,
       onAfterClose: () => {
@@ -169,8 +175,8 @@ function Region() {
             <CongressmanProfileBox>
               <ProfileImg>
                 <Image
-                  src={congressmanData.img}
-                  alt="congressman_img"
+                  src={congressmanData.profileImage}
+                  alt="profileImage"
                   width={65}
                   height={78}
                 ></Image>
