@@ -12,7 +12,8 @@
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
       "@/images/*": ["public/images/*"],
-      "@/redux/*": ["redux/*"]
+      "@/redux/*": ["redux/*"],
+      "@/db/*": ["db/*"]
     }
   }
 }
