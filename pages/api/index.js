@@ -13,7 +13,7 @@ const headers = {
 
 const Rest = Axios.create({
   baseURL: process.env.NEXT_PUBLIC_BASE_URL,
-  timeout: 15000,
+  // timeout: 15000,
   headers: headers,
 });
 
