@@ -6,6 +6,7 @@ function Document() {
       <Head>
         <meta name="description" content="폴리폴리" />
 
+        {/* 아이콘 생성 사이트 - https://favicomatic.com/ */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />

@@ -20,6 +20,10 @@ function App({ Component, pageProps }) {
   const router = useRouter();
   const getLayout = Component.getLayout || ((page) => page);
 
+  useEffect(() => {
+    localStorage.setItem("test", process.env.NEXT_PUBLIC_GA_TRACKING_ID);
+  }, []);
+
   // 배포 후 Cache busting
   useEffect(() => {
     const shortCommitId = COMMIT_ID.commitId?.slice(0, 6);
