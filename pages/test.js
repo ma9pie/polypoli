@@ -30,6 +30,12 @@ function Test() {
     setIsOpenConfirm(false);
   };
 
+  useEffect(() => {
+    console.log(process.env);
+    console.log(process.env.NEXT_PUBLIC_GA_TRACKING_ID);
+    localStorage.setItem("test", process.env.NEXT_PUBLIC_GA_TRACKING_ID);
+  }, []);
+
   // 복사 속도 테스트
   useEffect(() => {
     return;
