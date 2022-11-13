@@ -52,13 +52,13 @@ Rest.interceptors.response.use(
     );
 
     if (!isOpenModal) {
-      ModalUtils.openAlert({
-        message: `서버오류가\n 발생하였습니다.`,
-        onAfterClose: () => {
-          isOpenModal = false;
-        },
-      });
-      isOpenModal = true;
+      // ModalUtils.openAlert({
+      //   message: `서버오류가\n 발생하였습니다.`,
+      //   onAfterClose: () => {
+      //     isOpenModal = false;
+      //   },
+      // });
+      // isOpenModal = true;
     }
 
     // const errResult = error.response;
