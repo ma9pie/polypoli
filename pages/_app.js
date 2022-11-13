@@ -20,6 +20,10 @@ function App({ Component, pageProps }) {
   const router = useRouter();
   const getLayout = Component.getLayout || ((page) => page);
 
+  useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_MONGODB_URI);
+  }, []);
+
   // 배포 후 Cache busting
   useEffect(() => {
     const shortCommitId = COMMIT_ID.commitId?.slice(0, 6);
