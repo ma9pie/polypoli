@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 const CongressmanSchema = new mongoose.Schema(
   {
-    congressman_id: Number,
-    member_seq: Number,
+    congressmanId: Number,
+    memberSeq: Number,
     name: String,
     hjNm: String,
     party: String,
@@ -14,9 +14,9 @@ const CongressmanSchema = new mongoose.Schema(
     gender: String,
     tel: String,
     email: String,
-    academic_background: String,
+    academicBackground: String,
     career: String,
-    profile_image: String,
+    profileImage: String,
   },
   { collection: "congressman" }
 );

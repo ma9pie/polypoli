@@ -1,0 +1,16 @@
+[
+  {
+    "userId": "admin",
+    "userPassword": "polypoli",
+    "userPhoneNumber": "01051871787",
+    "userArea": "서울특별시 광진구 화양동",
+    "userRegion": "서울 광진구을",
+    "regionCongressmanId": 3057,
+    "userStamp": 1,
+    "userName": "폴리폴리",
+    "userGender": "male",
+    "userYearOfBirth": 1995,
+    "userImg": 0,
+    "userFollowings": "3098,3039,2685,2541"
+  }
+]

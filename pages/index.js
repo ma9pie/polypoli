@@ -26,17 +26,27 @@ function pageFrame() {
   const [startTime, setStartTime] = useState();
   const [startX, setStartX] = useState();
 
-  useEffect(() => {
-    if (!isLogin()) {
-      dispatch(pageActions.setTabNum(0));
-    }
-  }, []);
+  // useEffect(() => {
+  // if (!isLogin()) {
+  //   dispatch(pageActions.setTabNum(0));
+  // }
+  // }, []);
+
+  // useEffect(() => {
+  //   if (containerRef.current) {
+  //     setOffsetWidth(containerRef.current.offsetWidth);
+  //   }
+  // }, [pageState.tabNum]);
+
+  let resizeWindow = () => {
+    setOffsetWidth(containerRef.current.offsetWidth);
+  };
 
   useEffect(() => {
-    if (containerRef.current) {
-      setOffsetWidth(containerRef.current.offsetWidth);
-    }
-  }, [pageState.tabNum]);
+    resizeWindow();
+    window.addEventListener("resize", resizeWindow);
+    return () => window.removeEventListener("resize", resizeWindow);
+  }, []);
 
   const isLogin = () => {
     return userState.userKey !== -1;
@@ -68,7 +78,7 @@ function pageFrame() {
     const criticalTime = 200;
     const criticalWidth = offsetWidth * 0.2;
 
-    if (userState.userKey === -1) return;
+    // if (userState.userKey === -1) return;
 
     switch (pageState.tabNum) {
       case 0:

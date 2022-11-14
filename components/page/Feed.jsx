@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Axios from "axios";
 import clonedeep from "lodash.clonedeep";
 import moment from "moment";
 import Head from "next/head";
@@ -33,11 +34,16 @@ function Feed(props) {
   const [page, setPage] = useState(-1);
 
   useEffect(() => {
-    FeedAPI.getFeed(userState.userKey, 0).then((res) => {
+    Axios.get("/api/v2/feed").then((res) => {
       setIsLoading(false);
       setFeeds(feeds.concat(res.data));
       setPage(0);
     });
+    // FeedAPI.getFeed(userState.userKey, 0).then((res) => {
+    //   setIsLoading(false);
+    //   setFeeds(feeds.concat(res.data));
+    //   setPage(0);
+    // });
   }, []);
 
   useEffect(() => {
@@ -195,7 +201,7 @@ function Feed(props) {
       });
       return;
     }
-    router.push("/bill/" + item.feed.billId);
+    router.push("/bill/" + item.billId);
   };
 
   if (isLoading) {
@@ -238,22 +244,24 @@ function Feed(props) {
               {/* 피드 국회의원 */}
               <ProfileBox>
                 <ProfileImg onClick={() => onClickProfile(item)}>
-                  <Image
-                    src={item.congressman.profileImage}
-                    width={40}
-                    height={40}
-                  />
+                  {item.congressman.profileImage && (
+                    <Image
+                      src={item.congressman.profileImage}
+                      width={40}
+                      height={40}
+                    />
+                  )}
                 </ProfileImg>
                 <Div>
                   <Text>{item.congressman.name}</Text>
-                  <MiniText>{item.feed.date}</MiniText>
+                  <MiniText>{item.date}</MiniText>
                 </Div>
               </ProfileBox>
 
               {/* 피드 콘텐츠 */}
               <ContentBox>
-                <Text dangerouslySetInnerHTML={{ __html: item.feed.content }} />
-                {item.feed.billId && (
+                <Text dangerouslySetInnerHTML={{ __html: item.content }} />
+                {item.billId && (
                   <SeeDetailLink
                     marginBottom="10px"
                     onClick={() => seeDetails(item)}

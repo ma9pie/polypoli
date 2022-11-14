@@ -1,0 +1,62 @@
+[
+  {
+    "content": "제400회 02차 본회의에 <font style='color:green'>출석</font> 했습니다.",
+    "date": "2022-09-07 00:00:00",
+    "billId": null,
+    "congressmanId": 3057
+  },
+  {
+    "content": "제401회 02차 본회의에 <font style='color:green'>출석</font> 했습니다.",
+    "date": "2022-09-07 00:00:00",
+    "billId": null,
+    "congressmanId": 3098
+  },
+  {
+    "content": "제402회 02차 본회의에 <font style='color:green'>출석</font> 했습니다.",
+    "date": "2022-09-07 00:00:00",
+    "billId": null,
+    "congressmanId": 3039
+  },
+  {
+    "content": "제403회 02차 본회의에 <font style='color:green'>출석</font> 했습니다.",
+    "date": "2022-09-07 00:00:00",
+    "billId": null,
+    "congressmanId": 2685
+  },
+  {
+    "content": "제404회 02차 본회의에 <font style='color:green'>출석</font> 했습니다.",
+    "date": "2022-09-07 00:00:00",
+    "billId": null,
+    "congressmanId": 2541
+  },
+  {
+    "content": "<p>대규모유통업에서의 거래 공정화에 관한 법률 일부개정법률안(이용선의원등14인)</p><p>진행 : <font style='color:#5D5FEF'>계류</font> <p>상임위원회 : </p>",
+    "date": "2022-10-17 00:00:00",
+    "billId": 2117829,
+    "congressmanId": 3057
+  },
+  {
+    "content": "<p>독점규제 및 공정거래에 관한 법률 일부개정법률안(이용선의원 등 14인)</p><p>진행 : <font style='color:#5D5FEF'>계류</font> <p>상임위원회 : </p>",
+    "date": "2022-10-17 00:00:00",
+    "billId": 2117827,
+    "congressmanId": 3098
+  },
+  {
+    "content": "<p>가맹사업거래의 공정화에 관한 법률 일부개정법률안(이용선의원 등 14인)</p><p>진행 : <font style='color:#5D5FEF'>계류</font> <p>상임위원회 : </p>",
+    "date": "2022-10-17 00:00:00",
+    "billId": 2117826,
+    "congressmanId": 3039
+  },
+  {
+    "content": "<p>하도급거래 공정화에 관한 법률 일부개정법률안(이용선의원등14인)</p><p>진행 : <font style='color:#5D5FEF'>계류</font> <p>상임위원회 : </p>",
+    "date": "2022-10-17 00:00:00",
+    "billId": 2117825,
+    "congressmanId": 2685
+  },
+  {
+    "content": "<p>방송통신발전 기본법 일부개정법률안(조승래의원 등 14인)</p><p>진행 : <font style='color:#5D5FEF'>계류</font> <p>상임위원회 : </p>",
+    "date": "2022-10-17 00:00:00",
+    "billId": 2117824,
+    "congressmanId": 2541
+  }
+]
